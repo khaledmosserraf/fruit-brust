@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- Tailwind and Daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awsome link -->
+    <script src="https://kit.fontawesome.com/38d4c67ce2.js" crossorigin="anonymous"></script>
+
+    <!-- Google font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+    <!-- primary color -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pri-color': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="font-lato">
+
+    <header>
+        <nav class="mx-auto lg:mx-36 mt-5 h-auto lg:h-36">
+
+            <div class="navbar bg-white md:bg-white lg:bg-pri-color rounded-full">
+                <div class="navbar-start">
+
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                        <div class="lg:hidden dropdown-content z-[1] mt-36 shadow bg-base-100 rounded-box flex items-center md:space-x-4">
+                            <div class="relative">
+                                <span class="absolute inset-y-0 right-6 flex items-center pl-2 w-3">
+                                    <button type="submit" title="Search" class="p-1 ">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </span>
+                                <input type="search" name="Search" placeholder="Search here" class="w-44 py-2 pl-4 text-sm rounded-md sm:w-auto">
+                            </div>                    
+                        </div>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-horizontal mt-1 p-2 w-auto text-white invisible md:invisible lg:visible">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                    <img class="w-16 h-12" src="./images/logo.png" alt="">
+                    <h3 class="text-4xl font-bold pl-2 text-black md:text-black lg:text-white">Fruit Burst</h3>
+                </div>
+                <div class="navbar-end rounded-full flex items-center sd:invisible md:invisible lg:visible">
+                    <div class="relative">
+                        <span class="absolute inset-y-0 right-6 flex items-center pl-2 w-3">
+                            <button type="submit" title="Search" class="p-1 ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </span>
+                        <input type="search" name="Search" placeholder="Search here" class="w-44 py-2 pl-4 text-sm rounded-full sm:w-auto">
+                    </div>                    
+                </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
